@@ -62,4 +62,6 @@
 	</build>
 
   
+	<description>Projeto de treinamento para desenvolvimento de serviços em Java</description>
+	<url>https://github.com/erlangMS/unb_aula</url>
 </project>
