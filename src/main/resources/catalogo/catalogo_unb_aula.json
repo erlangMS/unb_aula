@@ -1,0 +1,11 @@
+[
+	{
+		"catalog": "/unb_aula/curso", 
+		"file": "catalogo_curso.json"
+	},
+	
+	{
+		"catalog": "/unb_aula/pessoa", 
+		"file": "catalogo_pessoa.json"
+	}
+]

@@ -1,0 +1,243 @@
+[
+	{
+		"name" : "/unb_aula/pessoa",
+		"comment": "Lista as pessoas disponíveis.",
+		"owner": "unb_aula",
+		"version": "1",
+		"service" : "br.unb.unb_aula.facade.PessoaFacade:find",
+		"url": "/unb_aula/pessoa",
+		"type": "GET",
+		"lang": "java",
+		"querystring": [
+			{
+				"name": "filter",
+				"type": "string",
+				"default" : "",
+				"comment": "Filtro principal da pesquisa"
+			},
+			{
+				"name": "fields",
+				"type": "string",
+				"default" : "",
+				"comment": "Campos que devem ser retornados na pesquisa"
+			},
+			{
+				"name": "offset",
+				"type": "int",
+				"default" : "0",
+				"comment": "offset da pesquisa"
+			},
+			{
+				"name": "limit",
+				"type": "int",
+				"default" : "100",
+				"comment": "limite do paginador"
+			},
+			{
+				"name": "sort",
+				"type": "string",
+				"default" : "",
+				"comment": "Campos que devem ser ordenados"
+			}
+		]
+	},
+
+	{
+		"name" : "/aula1/pessoa",
+		"comment": "Lista as pessoas disponíveis.",
+		"owner": "unb_aula",
+		"version": "1",
+		"service" : "br.unb.unb_aula.facade.PessoaFacade:find",
+		"url": "/aula1/pessoa",
+		"type": "GET",
+		"APIkey":"true",
+		"lang": "java",
+		"querystring": [
+			{
+				"name": "filter",
+				"type": "string",
+				"default" : "",
+				"comment": "Filtro principal da pesquisa"
+			},
+			{
+				"name": "fields",
+				"type": "string",
+				"default" : "",
+				"comment": "Campos que devem ser retornados na pesquisa"
+			},
+			{
+				"name": "offset",
+				"type": "int",
+				"default" : "0",
+				"comment": "offset da pesquisa"
+			},
+			{
+				"name": "limit",
+				"type": "int",
+				"default" : "100",
+				"comment": "limite do paginador"
+			},
+			{
+				"name": "sort",
+				"type": "string",
+				"default" : "",
+				"comment": "Campos que devem ser ordenados"
+			}
+		]
+	},
+
+	{
+		"name" : "/unb_aula/pessoa/:id",
+		"comment": "Pessoa",
+		"owner": "unb_aula",
+		"version": "1",
+		"service" : "br.unb.unb_aula.facade.PessoaFacade:findById",
+		"url": "/unb_aula/pessoa/:id",
+		"type": "GET",
+		"APIkey":"true",
+		"lang" : "java"
+	},
+
+	{
+		"name" : "/aula1/pessoa/:id",
+		"comment": "Pessoa",
+		"owner": "unb_aula",
+		"version": "1",
+		"service" : "br.unb.unb_aula.facade.PessoaFacade:findById",
+		"url": "/aula1/pessoa/:id",
+		"type": "GET",
+		"APIkey":"true",
+		"lang" : "java"
+	},
+
+	{
+		"name" : "/unb_aula/pessoa/:id",
+		"comment": "Pessoa",
+		"owner": "unb_aula",
+		"version": "1",
+		"service" : "br.unb.unb_aula.facade.PessoaFacade:update",
+		"url": "/unb_aula/pessoa/:id",
+		"type": "PUT",
+		"APIkey":"true",
+		"lang" : "java"
+	},
+
+	{
+		"name" : "/unb_aula/pessoa",
+		"comment": "Pessoa",
+		"owner": "unb_aula",
+		"version": "1",
+		"service" : "br.unb.unb_aula.facade.PessoaFacade:insert",
+		"url": "/unb_aula/pessoa",
+		"type": "POST",
+		"APIkey":"true",
+		"lang" : "java"	
+	},
+
+	{
+		"name" : "/aula1/pessoa",
+		"comment": "Pessoa",
+		"owner": "unb_aula",
+		"version": "1",
+		"service" : "br.unb.unb_aula.facade.PessoaFacade:insert",
+		"url": "/aula1/pessoa",
+		"type": "POST",
+		"APIkey":"true",
+		"lang" : "java"	
+	},
+
+	{
+		"name" : "/unb_aula/pessoa",
+		"comment": "Pessoa",
+		"owner": "unb_aula",
+		"version": "1",
+		"service" : "br.unb.unb_aula.facade.PessoaFacade:delete",
+		"url": "/unb_aula/pessoa",
+		"type": "DELETE",
+		"APIkey":"true",
+		"lang" : "java"	
+	},
+
+	{
+		"name" : "/unb_aula/pessoa/:id",
+		"comment": "Pessoa",
+		"owner": "unb_aula",
+		"version": "1",
+		"service" : "br.unb.unb_aula.facade.PessoaFacade:delete",
+		"url": "/unb_aula/pessoa/:id",
+		"type": "DELETE",
+		"APIkey":"true",
+		"lang" : "java"	
+	},
+	{
+		"name" : "/unb_aula/pessoa/:id/questao",
+		"comment": "Questao",
+		"owner": "unb_aula",
+		"version": "1",
+		"service" : "br.unb.unb_aula.facade.QuestaoFacade:insert",
+		"url": "/unb_aula/pessoa/:id/questao",
+		"type": "POST",
+		"APIkey":"true",
+		"lang" : "java"	
+	},
+
+	{
+		"name" : "/unb_aula/pessoa/:id/questao",
+		"comment": "Questao",
+		"owner": "unb_aula",
+		"version": "1",
+		"service" : "br.unb.unb_aula.facade.QuestaoFacade:findByIdPessoa",
+		"url": "/unb_aula/pessoa/:id/questao",
+		"type": "GET",
+		"APIkey":"true",
+		"lang" : "java"	
+	},
+
+	{
+		"name" : "/unb_aula/pessoa/:id/credito",
+		"comment": "Pessoa",
+		"owner": "unb_aula",
+		"version": "1",
+		"service" : "br.unb.unb_aula.facade.PessoaFacade:getCredito",
+		"url": "/unb_aula/pessoa/:id/credito",
+		"type": "GET",
+		"APIkey":"true",
+		"lang" : "java"	
+	},
+
+	{
+		"name" : "/aula1/pessoa/:id/credito",
+		"comment": "Pessoa",
+		"owner": "unb_aula",
+		"version": "1",
+		"service" : "br.unb.unb_aula.facade.PessoaFacade:getCredito",
+		"url": "/aula1/pessoa/:id/credito",
+		"type": "GET",
+		"APIkey":"true",
+		"lang" : "java"	
+	},
+
+	{
+		"name" : "/unb_aula/pessoa/:id/credito",
+		"comment": "Pessoa",
+		"owner": "unb_aula",
+		"version": "1",
+		"service" : "br.unb.unb_aula.facade.PessoaFacade:inserirCredito",
+		"url": "/unb_aula/pessoa/:id/credito",
+		"type": "POST",
+		"APIkey":"true",
+		"lang" : "java"	
+	},
+
+	{
+		"name" : "/aula1/pessoa/:id/credito",
+		"comment": "Pessoa",
+		"owner": "unb_aula",
+		"version": "1",
+		"service" : "br.unb.unb_aula.facade.PessoaFacade:inserirCredito",
+		"url": "/aula1/pessoa/:id/credito",
+		"type": "POST",
+		"APIkey":"true",
+		"lang" : "java"	
+	}
+]

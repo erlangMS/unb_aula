@@ -1,0 +1,173 @@
+[
+	{
+		"name" : "/unb_aula/curso",
+		"comment": "Lista os cursos disponíveis.",
+		"owner": "unb_aula",
+		"version": "1",
+		"service" : "br.unb.unb_aula.facade.CursoFacade:find",
+		"url": "/unb_aula/curso",
+		"type": "GET",
+		"lang": "java",
+		"querystring": [
+			{
+				"name": "filter",
+				"type": "string",
+				"default" : "",
+				"comment": "Filtro principal da pesquisa"
+			},
+			{
+				"name": "fields",
+				"type": "string",
+				"default" : "",
+				"comment": "Campos que devem ser retornados na pesquisa"
+			},
+			{
+				"name": "offset",
+				"type": "int",
+				"default" : "0",
+				"comment": "offset da pesquisa"
+			},
+			{
+				"name": "limit",
+				"type": "int",
+				"default" : "100",
+				"comment": "limite do paginador"
+			},
+			{
+				"name": "sort",
+				"type": "string",
+				"default" : "",
+				"comment": "Campos que devem ser ordenados"
+			}
+		]
+	},
+
+	{
+		"name" : "/aula1/curso",
+		"comment": "Lista os cursos disponíveis.",
+		"owner": "unb_aula",
+		"version": "1",
+		"service" : "br.unb.unb_aula.facade.CursoFacade:find",
+		"url": "/aula1/curso",
+		"type": "GET",
+		"APIkey":"true",
+		"lang": "java",
+		"querystring": [
+			{
+				"name": "filter",
+				"type": "string",
+				"default" : "",
+				"comment": "Filtro principal da pesquisa"
+			},
+			{
+				"name": "fields",
+				"type": "string",
+				"default" : "",
+				"comment": "Campos que devem ser retornados na pesquisa"
+			},
+			{
+				"name": "offset",
+				"type": "int",
+				"default" : "0",
+				"comment": "offset da pesquisa"
+			},
+			{
+				"name": "limit",
+				"type": "int",
+				"default" : "100",
+				"comment": "limite do paginador"
+			},
+			{
+				"name": "sort",
+				"type": "string",
+				"default" : "",
+				"comment": "Campos que devem ser ordenados"
+			}
+		]
+	},
+
+	{
+		"name" : "/unb_aula/curso/:id",
+		"comment": "Obter curso por id",
+		"owner": "unb_aula",
+		"version": "1",
+		"service" : "br.unb.unb_aula.facade.CursoFacade:findById",
+		"url": "/unb_aula/curso/:id",
+		"type": "GET",
+		"APIkey":"true",
+		"lang" : "java"
+	},
+
+	{
+		"name" : "/aula1/curso/:id",
+		"comment": "Obter curso por id",
+		"owner": "unb_aula",
+		"version": "1",
+		"service" : "br.unb.unb_aula.facade.CursoFacade:findById",
+		"url": "/aula1/curso/:id",
+		"type": "GET",
+		"APIkey":"true",
+		"lang" : "java"
+	},
+
+
+	{
+		"name" : "/unb_aula/curso/:id",
+		"comment": "Alterar curso",
+		"owner": "unb_aula",
+		"version": "1",
+		"service" : "br.unb.unb_aula.facade.CursoFacade:update",
+		"url": "/unb_aula/curso/:id",
+		"type": "PUT",
+		"APIkey":"true",
+		"lang" : "java"
+	},
+
+	{
+		"name" : "/aula1/curso/:id",
+		"comment": "Alterar curso",
+		"owner": "unb_aula",
+		"version": "1",
+		"service" : "br.unb.unb_aula.facade.CursoFacade:update",
+		"url": "/aula1/curso/:id",
+		"type": "PUT",
+		"APIkey":"true",
+		"lang" : "java"
+	},
+
+	{
+		"name" : "/unb_aula/curso",
+		"comment": "Cadastrar curso",
+		"owner": "unb_aula",
+		"version": "1",
+		"service" : "br.unb.unb_aula.facade.CursoFacade:insert",
+		"url": "/unb_aula/curso",
+		"type": "POST",
+		"APIkey":"true",
+		"lang" : "java"	
+	},
+
+	{
+		"name" : "/aula1/curso",
+		"comment": "Cadastrar curso",
+		"owner": "unb_aula",
+		"version": "1",
+		"service" : "br.unb.unb_aula.facade.CursoFacade:insert",
+		"url": "/aula1/curso",
+		"type": "POST",
+		"APIkey":"true",
+		"lang" : "java"	
+	},
+
+	{
+		"name" : "/unb_aula/curso",
+		"comment": "Excluir curso",
+		"owner": "unb_aula",
+		"version": "1",
+		"service" : "br.unb.unb_aula.facade.CursoFacade:delete",
+		"url": "/unb_aula/curso",
+		"type": "DELETE",
+		"APIkey":"true",
+		"lang" : "java"	
+	}
+]
