@@ -8,6 +8,10 @@ import javax.ejb.Startup;
 
 import br.erlangms.EmsServiceFacade;
 import br.erlangms.IEmsRequest;
+import br.erlangms.rest.IRestApiManager;
+import br.erlangms.rest.RestApiJpaManager;
+import br.erlangms.rest.request.IRestApiRequest;
+import br.erlangms.rest.request.RestApiRequest;
 import br.unb.unb_aula.model.Pessoa;
 import br.unb.unb_aula.service.ModApplication;
  
@@ -23,11 +27,13 @@ public class PessoaFacade extends EmsServiceFacade {
 	}
 	
 	public List<Pessoa> find(IEmsRequest request){
+
 		String filter = request.getQuery("filter");
 		String fields = request.getQuery("fields");
 		int limit = request.getQueryAsInt("limit");
 		int offset = request.getQueryAsInt("offset");
 		String sort = request.getQuery("sort");
+
 		return ModApplication.getInstance()
 			.getPessoaService()
 			.find(filter, fields, limit, offset, sort);

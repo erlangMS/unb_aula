@@ -1,7 +1,9 @@
 package br.unb.unb_aula.service;
 
 import java.util.List;
+
 import javax.ejb.Stateless;
+
 import br.unb.unb_aula.infra.ModInfra;
 import br.unb.unb_aula.model.Curso;
 
